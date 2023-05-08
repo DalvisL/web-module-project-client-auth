@@ -1,3 +1,7 @@
+/* Google fonts imports */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
@@ -48,4 +52,5 @@ table {
 
 html {
     font-size: 62.5%;
+    background: #a083cc;
 }

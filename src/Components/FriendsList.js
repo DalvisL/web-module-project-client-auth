@@ -29,15 +29,18 @@ const FriendsList = () => {
     <>
         <div className='friends-list page'>
             <h2>FRIENDS LIST</h2>
-            {friends.length === 0 ? <h3>Loading...</h3> : null}
-            {friends.map(friend => {
-                return (
-                    <div key={friend.id} className='friend'>
-                        <h3>{`- ${friend.name.toUpperCase()}`}</h3>
-                        <h3>{`- ${friend.email.toUpperCase()}`}</h3>
-                    </div>
-                )
-            })}  
+            {friends.length === 0 ? <h3 className='loading'>Loading...</h3> : null}
+            <div className='friends'>
+                {friends.map(friend => {
+                    return (
+                        <div key={friend.id} className='friend'>
+                            <h3>{`- ${friend.name.toUpperCase()}`}</h3>
+                            <h3>{`- ${friend.email.toUpperCase()}`}</h3>
+                        </div>
+                    )
+                })} 
+            </div>
+             
         </div>
         
     </>

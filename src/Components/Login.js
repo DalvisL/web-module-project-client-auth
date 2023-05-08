@@ -37,7 +37,7 @@ const Login = () => {
         <>
         <div className='login page'>
             {isInvalid ? <p>Invalid Credentials</p> : null}
-            <h2>Login</h2>
+            <h2>LOGIN</h2>
             <form onSubmit={evt => handleSubmit(evt)}>
                 <div className='field'>
                     <label htmlFor="username">USERNAME</label>
@@ -51,7 +51,7 @@ const Login = () => {
                     /> 
                 </div>
                 <div className='field'>
-                <label htmlFor="password">PASSWORD</label>
+                    <label htmlFor="password">PASSWORD</label>
                     <input
                         onChange={evt => handleChange(evt)}
                         type="password"
